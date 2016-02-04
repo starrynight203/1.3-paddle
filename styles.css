@@ -9,6 +9,15 @@ header {
   background-color: #2E86C1;
   opacity: 0.6;
 }
+
+.icon-wave {
+  background: url("logo.png");
+  float: left;
+}
+
+.search {
+  background: url("search.png");
+}
 h3{
   font-family: 'Open sans', sans-serif;
   font-size: 15px;
