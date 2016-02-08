@@ -1,50 +1,361 @@
 body {
-  margin: 0;
-  color: black;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  color: rgba(17, 52, 79, 1);
 }
 
 header {
-  background: url("Free-Ocean-Wallpaper-6.jpg");
+  background: url("icons/Free-Ocean-Wallpaper-6.jpg") center center;
+  -webkit-background-size: cover;
+  background-size: cover;
   height: 523px;
-  background-color: #2E86C1;
-  opacity: 0.6;
+  position: relative;
 }
 
-.icon-wave {
-  background: url("logo.png");
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(46, 118, 178, 0.7);
+}
+
+/* Position these to bring them above overlay */
+nav, h1, h4 {
+  position: relative;
+}
+
+nav {
+  max-width: 1018px;
+  margin: 0 auto;
+
+  padding-right: 02.7504912%;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-container {
+  float: left;
+  margin-top: 6px;
+  margin-left: 14px;
+}
+
+.logo-container h2 {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 0 2px;
+  letter-spacing: .2px;
+  position: relative;
+  top: -1px;
+}
+
+.logo-container h2 > span {
+  position: relative;
+  left: -2px;
+  letter-spacing: 0;
+}
+
+.logo-container h2 > span > span {
+  letter-spacing: -0.7px;
+}
+
+.logo-container img,
+.logo-container h2 {
+  vertical-align: middle;
+}
+
+.header-links {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.header-links li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 11px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.header-links li:first-child {
+  position: relative;
+  top: -1px;
+}
+
+.header-links li span {
+  display: inline-block;
+  transform: scaleY(1.5);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.header-links li span,
+.header-links li img {
+  vertical-align: middle;
+}
+
+.header-links li img {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+header h1,
+header h4 {
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(17, 52, 79, 1);
+  text-transform: uppercase;
+  margin: 150px 0 0 0;
+
+  font-size: 104px;
+  line-height: 104px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+header h4 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+.square1 {
+  width: 616px;
+  display: inline-block;
+  margin-left: 167px;
+  color: #283747;
+}
+
+.square1 h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 65px;
+  color: #212F3D;
+  font-weight: normal;
+}
+
+.square1 li {
+  list-style: none;
+  display: inline-block;
+}
+
+.square1 h2 {
+  font-size: 10px;
+  color: #2471A3;
+}
+
+.square1 h4 {
+  font-family: 10px;
+  color: #AEB6BF;
+  font-weight: normal;
+}
+
+.square1 p {
+  font-size: 13px;
+}
+
+.square1 h3 {
+  color: #2471A3;
+  font-size: 21px;
+  font-family: 'Open Sans', sans-serif;
+  border-left-style: solid;
+  border-left-color: #AEB6BF;
+  font-weight: normal;
+
+
+}
+
+.square1 ul {
+  color: white;
   float: left;
 }
 
-.search {
-  background: url("search.png");
+.readcomments {
+  margin: 10px 0;
+  background-color: #566573;
+  line-height: 29px;
 }
-h3{
-  font-family: 'Open sans', sans-serif;
-  font-size: 15px;
+
+.readlater {
+  margin: 10px 0;
+  background-color: #566573;
+  line-height: 29px;
 }
-h1 {
-  max-width: 1024px;
-  padding: 100px;
-  font-family: 'Oswald', sans-serif;
+
+.sharethis {
+  margin: 10px 0;
+  background-color: #1A5276;
+  line-height: 29px;
+}
+
+.avatar {
+  background: url("icons/nickcage.jpg") no-repeat center center/cover;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: rgba(46, 118, 178, 0.7);
+}
+
+
+
+.square2 {
+  width: 278px;
+  display: inline-block;
+  margin-left: 91px;
+  color: #AEB6BF;
+  font-size: 11px;
+}
+
+.square2 h2 {
+  font-size: 13px;
+  color: #2471A3;
+  margin-left: 90px;
+  margin-right: 90px;
   text-align: center;
-  color: white;
-  font-size: 85px;
-  margin: 0;
+  font-weight: normal;
 }
-h4 {
-  position: relative;
-  float: right;
-  margin: 0;
-  font-family: 'Open sans', sans-serif;
+
+.square2 li {
+  list-style: none;
+  color: #AEB6BF;
+  display: inline;
+  font-size: 10px;
+  text-align: center;
+  margin: 17px 0;
 }
-ul#otis {
- list-style-type: none;
- }
 
+.square2 h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #2471A3;
 
-li {
+}
+
+.square2 span {
   float: right;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Oswald', san-serif;
+  text-decoration: underline;
+  color: #AEB6BF;
+  font-size: 11px;
+}
+.billmurray {
+  background: url("icons/billmurray.jpg")no-repeat center center/cover;
+  height: 300px;
+  width: 278px;
+  background: rgba(46, 118, 178, 0.7);
+  opacity: .5;
+}
+
+.bigcircle {
+  background: url("icons/nickcage.jpg")no-repeat center center/cover;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  background: rgba(46, 118, 178, 0.7);
+  opacity: .5;
+  margin-left: 97px;
+  margin-right: 97px;
+}
+
+.square2 p {
+  font-size: 11px;
+}
+
+.bottomsquare {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bottomsquare h1 {
+  font-size: 56px;
+  text-align: center;
+  font-weight: normal;
+  color: #212F3D;
+}
+
+.bottomsquare ul {
+  list-style: none;
+  color: #212F3D;
+  font-size: 27px;
+  text-align: left;
+}
+
+.pic1 {
+  background: url("icons/placeholder1.jpg")no-repeat center center/cover;
+  height: 330px;
+  width: 325px;
+  display: inline-block;
+}
+
+.pic2 {
+  background: url("icons/placeholder2.jpg")no-repeat center center/cover;
+  height: 330px;
+  width: 325px;
+  display: inline-block;
+}
+
+.pic3 {
+  background: url("icons/placeholder3.jpg")no-repeat center center/cover;
+  height: 330px;
+  width: 325px;
+  display: inline-block;
+}
+
+.pic4 {
+  background: url("icons/placeholder4.jpg")no-repeat center center/cover;
+  height: 330px;
+  width: 325px;
+  display: inline-block;
+}
+
+.ironbox {
+  color: #AEB6BF;
+  background-color: #1A5276;
+  max-width: 100%;
+  font-size: 10px;
+}
+.ironbox li {
+  list-style: none;
+  float: right;
+  color: #AEB6BF;
+  background-color: #1A5276;
+}
+.nav1 {
+  border-right-style: solid;
+  border-right-color: #AEB6BF;
+  display: inline-block;
+}
+
+.nav2 {
+  border-right-style: solid;
+  border-right-color: #AEB6BF;
+  display: inline-block;
+}
+
+.nav3 {
+  border-right-style: solid;
+  border-right-color: #AEB6BF;
+  display: inline-block;
+}
+
+.nav4 {
+  border-right-style: solid;
+  border-right-color: #AEB6BF;
+  display: inline-block;
 }
